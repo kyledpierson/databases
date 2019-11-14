@@ -1,0 +1,13 @@
+DELETE FROM authors WHERE a_name != "";
+
+DELETE FROM returned WHERE check_id > 0;
+DELETE FROM lost WHERE check_id > 0;
+DELETE FROM checkouts WHERE check_id > 0;
+
+DELETE FROM requests WHERE isbn != "";
+DELETE FROM reviews WHERE isbn != "";
+
+DELETE FROM book_copies WHERE book_id > 0;
+DELETE FROM books WHERE isbn != "";
+
+DELETE FROM users WHERE card_id > 0;
